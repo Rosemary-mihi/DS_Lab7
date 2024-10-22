@@ -6,7 +6,7 @@ public class QueueUnderFlowException extends RuntimeException
 
    public QueueUnderFlowException()
    {
-      super();
+      super("queue is empty");
    }
 
 
