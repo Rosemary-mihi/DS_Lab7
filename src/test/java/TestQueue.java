@@ -35,6 +35,10 @@ public class TestQueue
 		assertEquals("2nd",A.pop());
 		assertEquals("3rd",A.pop());
 		assertTrue(A.isEmpty());
+		assertThrows(QueueUnderFlowException.class, () ->
+		{
+			A.pop();
+		});
 		
 	}
 }
